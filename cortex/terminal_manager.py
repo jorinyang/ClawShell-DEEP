@@ -15,10 +15,17 @@ class TerminalManager:
         self._ganglions: dict[NodeID, NodeInfo] = {}
         self._heartbeats: dict[NodeID, NodeHeartbeat] = {}
         self._trust_scores: dict[NodeID, float] = {}
+        self._cleanup_task = None
         event_bus.subscribe("node.register", self._on_register)
         event_bus.subscribe("node.heartbeat", self._on_heartbeat)
         event_bus.subscribe("node.offline", self._on_offline)
-        asyncio.create_task(self._cleanup_loop())
+
+    async def start(self):
+        self._cleanup_task = asyncio.create_task(self._cleanup_loop())
+
+    async def stop(self):
+        if self._cleanup_task:
+            self._cleanup_task.cancel()
 
     async def _on_register(self, event: EventMessage):
         try:

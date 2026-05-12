@@ -1,0 +1,1 @@
+No Python at '"C:\Users\Aorus\AppData\Local\Programs\Python\Python311\python.exe'

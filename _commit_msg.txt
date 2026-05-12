@@ -1,1 +1,1 @@
-feat: ClawShell 2.0 DEEP initial build
+docs: add CHANGELOG.md v1.0.0 release notes

@@ -1,0 +1,3 @@
+{"event_id":"64394a34-8464-4d78-98f5-5ccc75cae7c3","category":"task","event_type":"task.created","source":"test","target":null,"priority":50,"payload":{"tid":"t1"},"timestamp":"2026-05-12T17:36:07.605275Z","correlation_id":null,"ttl_seconds":60}
+{"event_id":"86cfcfca-829e-4619-8260-49a85f76e922","category":"system","event_type":"test.low","source":"test","target":null,"priority":0,"payload":{},"timestamp":"2026-05-12T17:36:07.611033Z","correlation_id":null,"ttl_seconds":60}
+{"event_id":"c22ca92e-3556-40e5-bbd7-ddb38a18933f","category":"system","event_type":"test.critical","source":"test","target":null,"priority":100,"payload":{},"timestamp":"2026-05-12T17:36:07.611060Z","correlation_id":null,"ttl_seconds":60}

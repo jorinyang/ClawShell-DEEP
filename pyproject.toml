@@ -1,30 +1,30 @@
 [project]
-name = \"clawshell-deep\"
-version = \"2.0.0\"
-description = \"ClawShell 2.0 - One Cloud Multi-Edge Distributed Neural Architecture\"
-readme = \"README.md\"
-requires-python = \">=3.10\"
-license = { text = \"MIT\" }
-authors = [{ name = \"ClawShell Team\" }]
+name = "clawshell-deep"
+version = "2.0.0"
+description = "ClawShell 2.0 - One Cloud Multi-Edge Distributed Neural Architecture"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ClawShell Team" }]
 
 dependencies = [
-    \"pyyaml>=6.0\",
-    \"requests>=2.31.0\",
-    \"aiohttp>=3.9.0\",
-    \"websockets>=12.0\",
-    \"psutil>=5.9.0\",
-    \"pydantic>=2.5.0\",
-
+    "pyyaml>=6.0",
+    "requests>=2.31.0",
+    "aiohttp>=3.9.0",
+    "websockets>=12.0",
+    "psutil>=5.9.0",
+    "pydantic>=2.5.0",
+]
 [project.optional-dependencies]
 dev = [
-    \"pytest>=8.0.0\",
-    \"pytest-asyncio>=0.23.0\",
-    \"pytest-cov>=4.1.0\",
-    \"ruff>=0.3.0\",
-    \"mypy>=1.8.0\",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
 ]
 
 [project.scripts]
-clawshell = \"cortex.cli:main\"
-clawshell-cortex = \"cortex.main:main\"
-clawshell-ganglion = \"ganglion.main:main\"
+clawshell = "cortex.cli:main"
+clawshell-cortex = "cortex.main:main"
+clawshell-ganglion = "ganglion.main:main"
