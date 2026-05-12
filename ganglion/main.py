@@ -1,9 +1,12 @@
 """ClawShell 2.0 — Ganglion main"""
-import asyncio, signal, sys, uuid
+import asyncio
+import signal
+import sys
+import uuid
 from loguru import logger
 from shared.config import get_ganglion_config
 from shared.models import NodeInfo
-from shared.types import NodeID, NodeStatus, NodeType
+from shared.types import NodeType
 from neural_bus import EventBus, GanglionTransport
 from ganglion.perception import PerceptionEngine
 from ganglion.adaptation import AdaptationEngine

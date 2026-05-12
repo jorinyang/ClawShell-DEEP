@@ -1,6 +1,7 @@
 """ClawShell 2.0 — Transport layer (WebSocket)"""
-import asyncio, time
-from typing import Any, Optional
+import asyncio
+import time
+from typing import Optional
 import websockets
 from websockets.asyncio.server import ServerConnection
 from websockets.exceptions import ConnectionClosed

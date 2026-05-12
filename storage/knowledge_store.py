@@ -1,9 +1,9 @@
 """ClawShell 2.0 — Knowledge & memory store"""
-import json, time
+import json
+import time
 from collections import OrderedDict
 from pathlib import Path
 from typing import Any, Optional
-from loguru import logger
 from shared.models import Knowledge, Memory
 
 class KnowledgeStore:

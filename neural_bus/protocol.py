@@ -1,5 +1,6 @@
 """ClawShell 2.0 — Message codec and factory"""
-import json, uuid
+import json
+import uuid
 from shared.models import EventMessage
 from shared.types import EventCategory, EventPriority, NodeID
 from typing import Any

@@ -1,10 +1,11 @@
 """ClawShell 2.0 — Terminal manager"""
-import asyncio, time
+import asyncio
+import time
 from typing import Any, Optional
 from loguru import logger
-from shared.models import EventMessage, NodeHeartbeat, NodeInfo, Task, TaskResult
-from shared.types import EventCategory, EventPriority, NodeStatus, NodeID, TrustLevel, TaskStatus
-from neural_bus import EventBus, MessageFactory
+from shared.models import EventMessage, NodeHeartbeat, NodeInfo, Task
+from shared.types import NodeStatus, NodeID, TrustLevel, TaskStatus
+from neural_bus import EventBus
 
 class TerminalManager:
     HEARTBEAT_TIMEOUT = 90

@@ -2,7 +2,7 @@
 from typing import Any, Optional
 import httpx
 from loguru import logger
-from shared.models import Memory, Knowledge
+from shared.models import Memory
 
 class MemOSAdapter:
     BASE_URL = "https://api.memos.cloud/v1"

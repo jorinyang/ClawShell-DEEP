@@ -1,9 +1,8 @@
 """ClawShell 2.0 — CLI"""
-import asyncio, sys
+import asyncio
 from pathlib import Path
 from typing import Optional
 import typer
-from loguru import logger
 
 app = typer.Typer(name="clawshell", help="ClawShell 2.0 — Distributed Neural Architecture")
 

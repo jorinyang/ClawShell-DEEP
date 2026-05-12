@@ -1,6 +1,6 @@
 """GitHub adapter"""
 import base64
-from typing import Any, Optional
+from typing import Optional
 import httpx
 from loguru import logger
 

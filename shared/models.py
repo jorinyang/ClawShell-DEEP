@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from typing import Any, Optional
 from pydantic import BaseModel, Field
 from .types import (NodeType, NodeStatus, Strategy, EventCategory, EventPriority,
-    TaskStatus, TrustLevel, HealthStatus, RepairLayer, OpenClawVariant,
+    TaskStatus, HealthStatus, RepairLayer, OpenClawVariant,
     PerceptionDimension, CapabilityDomain, NodeID, TaskID, PluginID)
 
 class NodeInfo(BaseModel):

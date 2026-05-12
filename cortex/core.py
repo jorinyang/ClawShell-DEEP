@@ -1,9 +1,10 @@
 """ClawShell 2.0 — Cortex core engine"""
-import asyncio, time
+import asyncio
+import time
 from typing import Any, Optional
 from loguru import logger
 from shared.models import CortexInfo, EventMessage, Task
-from shared.types import EventCategory, EventPriority, HealthStatus, NodeStatus, NodeID, Strategy
+from shared.types import NodeStatus, NodeID, Strategy
 from neural_bus import EventBus, CortexTransport, MessageFactory
 
 class FeedbackControlLoop:

@@ -1,5 +1,7 @@
 """ClawShell 2.0 — Adaptation engine"""
-import asyncio, os, subprocess, time
+import os
+import subprocess
+import time
 from pathlib import Path
 from typing import Any, Optional
 import psutil

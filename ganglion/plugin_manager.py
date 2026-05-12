@@ -1,6 +1,6 @@
 """ClawShell 2.0 — Plugin manager"""
 from pathlib import Path
-from typing import Any, Optional
+from typing import Optional
 import yaml
 from loguru import logger
 from shared.models import Plugin, PluginRegistry

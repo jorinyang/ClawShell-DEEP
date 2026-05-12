@@ -1,5 +1,7 @@
 """ClawShell 2.0 — Cortex main"""
-import asyncio, signal, sys
+import asyncio
+import signal
+import sys
 from loguru import logger
 from shared.config import get_cortex_config
 from cortex.core import CortexCore

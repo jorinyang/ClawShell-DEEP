@@ -1,6 +1,7 @@
 """Alibaba Cloud adapter"""
-import hmac, hashlib, base64
-from pathlib import Path
+import hmac
+import hashlib
+import base64
 from typing import Optional
 from datetime import datetime, timezone
 import httpx
@@ -33,7 +34,7 @@ class AliyunAdapter:
             resp = await self._http.get(url, headers=self._oss_headers("GET", key))
             if resp.status_code == 200: return resp.text
             return None
-        except Exception: logger.exception(f"OSS download error"); return None
+        except Exception: logger.exception("OSS download error"); return None
 
     def _oss_headers(self, method: str, key: str) -> dict[str, str]:
         now = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")

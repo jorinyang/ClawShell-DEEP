@@ -1,12 +1,13 @@
 """ClawShell 2.0 — EventBus core"""
-import asyncio, heapq, json, time
+import asyncio
+import heapq
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Awaitable, Callable, Optional
 from loguru import logger
 from shared.models import EventMessage
-from shared.types import EventCategory, EventPriority, NodeID
+from shared.types import NodeID
 
 EventHandler = Callable[[EventMessage], Awaitable[None]]
 

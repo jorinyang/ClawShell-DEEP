@@ -3,7 +3,7 @@ import asyncio
 from datetime import datetime, timezone
 from typing import Any, Optional
 from loguru import logger
-from shared.models import EventMessage, Insight, Knowledge, NodeID
+from shared.models import Insight, Knowledge, NodeID
 from neural_bus import EventBus, MessageFactory
 
 class BroadcastEngine:

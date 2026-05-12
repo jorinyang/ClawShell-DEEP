@@ -21,7 +21,7 @@ class ConfigLoader:
             config = self._merge_env(config, data, "CLAWSHELL_CORTEX_")
         config.node_id = os.getenv("CLAWSHELL_CORTEX_NODE_ID", config.node_id)
         config.host = os.getenv("CLAWSHELL_CORTEX_HOST", config.host)
-        port = os.getenv("CLAWSHELL_CORTEX_PORT");
+        port = os.getenv("CLAWSHELL_CORTEX_PORT")
         if port: config.port = int(port)
         strategy = os.getenv("CLAWSHELL_CORTEX_STRATEGY")
         if strategy: config.strategy = Strategy(strategy)

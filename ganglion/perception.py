@@ -1,7 +1,7 @@
 """ClawShell 2.0 — Perception engine"""
-import asyncio, platform, socket
+import asyncio
+import socket
 from pathlib import Path
-from typing import Any, Optional
 import psutil
 from loguru import logger
 from shared.models import NetworkPerception, PerceptionResult, SystemPerception

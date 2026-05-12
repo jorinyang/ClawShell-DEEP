@@ -2,7 +2,7 @@
 from pathlib import Path
 from typing import Any, Optional
 from loguru import logger
-from shared.types import OpenClawVariant, NodeID
+from shared.types import OpenClawVariant
 
 ARCHITECTURE_PROFILES: dict[OpenClawVariant, dict[str, Any]] = {
     OpenClawVariant.OPENCLAW: {"name": "OpenClaw", "config_dir": "~/.openclaw",
